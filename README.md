@@ -119,6 +119,12 @@ Return a response:
 - Docker
 - Jest
 
+# Deploy Project
+
+You can access the deploy of the project deployed at:
+
+📌 [Access the project here](https://backend-challenge-7zkr.onrender.com/)
+
 # How to run the project
 
 1. Clone this repository:
