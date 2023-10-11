@@ -1,0 +1,47 @@
+type Planet {
+  id: ID!
+  name: String!
+  mass: Float!
+  hasStation: Boolean!
+}
+
+type Station {
+  id: ID!
+  name: String!
+  planet: Planet!
+  rechargeInProgress: Boolean!
+}
+
+type Recharge {
+  id: ID!
+  datetime: String!
+  station: Station!
+  user: User!
+  isCompleted: Boolean!
+}
+
+type Query {
+  suitablePlanets: [Planet!]!
+  stations: [Station!]!
+}
+
+type Mutation {
+  installStation(input: InstallStationInput!): Station!
+  recharge(input: RechargeInput!): Recharge
+}
+
+input InstallStationInput {
+  name: String!
+  planet: String!
+}
+
+input RechargeInput {
+  stationId: Int!
+  datetime: String!
+}
+
+type User {
+  id: ID!
+  username: String!
+  recharges: [Recharge!]!
+}
