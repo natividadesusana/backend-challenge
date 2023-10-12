@@ -3,6 +3,8 @@
 # ℹ️ About
 Welcome to the Voltbras Ion Propulsion Challenge! This technical challenge is all about managing the charging of unmanned space vehicles using ion propulsion on different planets.
 
+#### 📌 Video presentation of the challenge: https://youtu.be/TyG0lSVkD60
+
 ## 🖇 Challenge Description
 
   The year is 2118, 100 years after the founding of Voltbras. We have expanded our business into charging management of ion propulsion unmanned space vehicles.
