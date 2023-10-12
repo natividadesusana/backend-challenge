@@ -1,8 +1,10 @@
 # Voltbras Ion Propulsion Challenge
 
-#### Welcome to the Voltbras Ion Propulsion Challenge! This technical challenge is all about managing the charging of unmanned space vehicles using ion propulsion on different planets.
+# ℹ️ About
+Welcome to the Voltbras Ion Propulsion Challenge! This technical challenge is all about managing the charging of unmanned space vehicles using ion propulsion on different planets.
 
-Challenge Description
+## 🖇 Challenge Description
+
   The year is 2118, 100 years after the founding of Voltbras. We have expanded our business into charging management of ion propulsion unmanned space vehicles.
   The Ion Thruster is one of several types of space propulsion, which uses beams of light based on electrical energy (that's where Voltbras comes in, we will supply this energy).
   Specifically, this energy propulsion must come from nuclear fuel, as the propulsion force is very strong.
@@ -15,7 +17,7 @@ Challenge Description
   1. Use NASA's exoplanet API, where you can consult its documentation and common queries, which allows you to search for planets outside the solar system!
   2. Only show planets with high gravity, the data does not show exactly what gravity the planet has, but Voltbras did the calculations and the ideal planets (with high gravity) are approximately the same ones that have a mass greater than 10 Jupiter mass (exoplanet .pl_bmassj)
 
-# Requirements
+# 🖇 Requirements
 
 Feel free to make any of the next requirements different from what was asked as long as you can justify the change. E.g.: I didn't do the requirement in such a way because the implementation I did is more performant and secure.
 
@@ -38,7 +40,7 @@ Feel free to make any of the next requirements different from what was asked as 
 
 8. Send along with your challenge repository a short video demonstrating the basic functioning of the system, in a free format, showing the implemented functionalities.
 
-# Extras
+# 🖇 Extras
 
 1. Add tests using Jest or any other testing framework
 
@@ -46,7 +48,7 @@ Feel free to make any of the next requirements different from what was asked as 
 
 3. Install a docker-compose, which simplifies running your server and DB
 
-4. We use prism but feel free to use any ORM
+4. We use prisma but feel free to use any ORM
 
 5. Add authentication (only an authenticated user can make a top-up or reservation)
 
@@ -57,7 +59,7 @@ Feel free to make any of the next requirements different from what was asked as 
 
 7. Create a stationHistory query, where it will be possible to view the recharge history of a station (show the time, duration of the recharge and the user who carried it out)
 
-## NASA API data example
+## 🖇 NASA API data example
 
     [
       {
@@ -72,7 +74,7 @@ Feel free to make any of the next requirements different from what was asked as 
       ...
     ]
 
-## Example of your API data
+## 🖇 Example of your API data
 
     {
       suitablePlanets {
@@ -100,7 +102,7 @@ Return a response:
         ]
     }
 
-## Example of mutations
+## 🖇 Example of mutations
 
     {
       installStation(
@@ -108,24 +110,35 @@ Return a response:
       )
     }
 
-# Technologies Used
+# 🛠️ Technologies Used
 
 - Node.js
 - TypeScript
-- Prism
+- Prisma
 - PostgreSQL
 - GraphQL
 - ApolloServer
 - Docker
 - Jest
 
-# Deploy Project
+# 🐳 Docker
 
-You can access the deploy of the project deployed at:
+- Docker
+- Docker Compose
 
-📌 [Access the project here](https://backend-challenge-7zkr.onrender.com/)
+Commands to run:
 
-# How to run the project
+1. Create a Docker image:
+
+        docker build -t backend .
+
+2. Start the services defined in the "docker-compose.yml" file in Docker containers.
+
+        docker-compose up
+
+If you want to see the database through pgadmin, you can log in to **http://localhost:8081**, using the Email: **example@example.com** and Password: **123** (this data is contained in the docker compose file).
+
+# ⚙️ How to run the project
 
 1. Clone this repository:
 
@@ -141,15 +154,15 @@ You can access the deploy of the project deployed at:
 
 4. Generate and apply migrations to the project:
 
-        npx prism migrate dev
+        npx prisma migrate dev
 
 5. To confirm again, generate PrismaClient:
 
-        npx prism generate
+        npx prisma generate
 
 6. You will see that the Seed seed data file has been generated. This is just some example data to get started with the populated bank. If you need to populate the bank again at another time, run the command:
 
-       npx prism db seed
+       npx prisma db seed
 
 8. Run the development server:
 
@@ -159,7 +172,7 @@ You can access the deploy of the project deployed at:
 
        Server ready at http://localhost:3000/
 
-10. Go to the "Query your server" link mentioned in the console message.
+10. Go to the **"Query your server"** link mentioned in the console message.
 
 11.  In the "Operation" section, paste the Query below:
 
@@ -330,5 +343,12 @@ In the "Variables" section, provide input data:
       }
     }
 
+### Deploy Project
+
+You can access the deploy of the project deployed at:
+
+📌 [Access the project here](https://backend-challenge-7zkr.onrender.com/)
+
 #### Happy coding and may your journey to the stars be filled with success and endless discoveries! 🚀🌌
+
     
