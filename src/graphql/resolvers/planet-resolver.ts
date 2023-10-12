@@ -1,4 +1,4 @@
-import { fetchExoplanetsData } from "../../api/axiosApi";
+import { fetchExoplanetsData } from "../../api/nasaApi";
 import { createNewPlanet } from "../../services/planet-service";
 import { SuitablePlanet } from "../../models/suitablePlanet-model";
 
