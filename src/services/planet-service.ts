@@ -32,6 +32,6 @@ export const createNewPlanet = async (planetData: ExoplanetData): Promise<Suitab
   };
 };
 
-const hasHighGravityBasedOnMass = (planetData: ExoplanetData): boolean => {
+export const hasHighGravityBasedOnMass = (planetData: ExoplanetData): boolean => {
   return planetData.pl_bmassj > 10;
 };

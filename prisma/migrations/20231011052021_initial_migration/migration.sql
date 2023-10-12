@@ -36,6 +36,8 @@ CREATE TABLE "users" (
     CONSTRAINT "users_pkey" PRIMARY KEY ("id")
 );
 
+ALTER TABLE recharges ALTER COLUMN datetime TYPE TIMESTAMP WITH TIME ZONE;
+
 -- CreateIndex
 CREATE UNIQUE INDEX "users_username_key" ON "users"("username");
 

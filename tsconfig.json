@@ -5,9 +5,14 @@
     "module": "CommonJS",
     "moduleResolution": "Node",
     "baseUrl": "src",
-    "types": ["node"],
+    "types": ["node", "jest"]
   },
+  "rootDirs": [
+    "src",
+    "tests"
+  ],
   "ts-node": {
     "esm": true
-  }
+  },
+  "include": ["src", "tests"]
 }
