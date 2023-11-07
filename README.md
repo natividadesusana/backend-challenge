@@ -3,8 +3,6 @@
 # ℹ️ About
 This project consists of managing the loading of unmanned space vehicles using ion propulsion on different planets.
 
-#### 📌 Video presentation: https://youtu.be/TyG0lSVkD60
-
 # 🛠️ Technologies Used
 
 - Node.js
